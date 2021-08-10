@@ -42,14 +42,15 @@ const BookItem = ({ book, dataHook }) => {
             />
           </div>
         )}
-
-        <ReactImageAppear
-          src={getBookCoverByOLID(book.cover_edition_key)}
-          alt={book.title}
-          className={classes.img}
-          animation="zoomIn"
-          animationDuration="1s"
-        />
+        <div data-hook={`image-${dataHook}`}>
+          <ReactImageAppear
+            src={getBookCoverByOLID(book.cover_edition_key)}
+            alt={book.title}
+            className={classes.img}
+            animation="zoomIn"
+            animationDuration="1s"
+          />
+        </div>
         <p className={classes.book_title}>{book.title}</p>
       </div>
 
