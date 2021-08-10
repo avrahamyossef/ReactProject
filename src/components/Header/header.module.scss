@@ -1,0 +1,31 @@
+.header {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(black, #000000c9, #00000005);
+  padding: 0 10%;
+
+  .logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+
+  li {
+    a {
+      text-decoration: none;
+      font-size: 1rem;
+      color: white;
+      padding: 30px;
+    }
+  }
+}

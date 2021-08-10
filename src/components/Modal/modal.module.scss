@@ -1,0 +1,93 @@
+.back_drop {
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.603); /* Black w/ opacity */
+}
+/* The Modal (background) */
+.modal {
+  position: fixed;
+  z-index: 99;
+  top: 10%;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    background-color: rgba(42, 42, 42, 0.6);
+    border-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+    margin: 10px 0;
+    text-align: center;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .close:hover,
+  .close:focus {
+    background-color: rgba(255, 255, 255, 0.233);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Modal Header */
+  .modal_header {
+    padding: 2px 16px;
+    color: white;
+  }
+
+  /* Modal Body */
+  .modal_body {
+    padding: 2px 16px 30px;
+
+    .select {
+      position: relative;
+      display: flex;
+      width: 20em;
+      height: 3em;
+      border-radius: 0.25em;
+    }
+  }
+
+  /* Modal Content */
+  .modal_content {
+    position: relative;
+    background-color: #151515;
+    margin: auto;
+    padding: 0;
+    border-radius: 5px;
+    //border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.6s;
+    color: rgb(223, 223, 223);
+  }
+
+  /* Add Animation */
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+}

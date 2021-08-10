@@ -1,28 +1,19 @@
-// import Todo from "./components/Todo";
 import { BrowserRouter, Switch } from "react-router-dom";
-import AllMeetupsPage from "./pages/AllMeetups";
-import NewMeetupPage from "./pages/NewMeetup";
-import FavoritesPage from "./pages/Favorites";
-
-import MainNavigation from "./components/layout/MainNavigation";
+import Header from "./components/Header/index";
+import SearchPage from "./pages/Search/index";
+import CollectionPage from "./pages/Collection/index";
 
 function App() {
   return (
-    <div>
-    
-      <MainNavigation />
-
+    <div className="App">
+      <Header />
       <Switch>
         <BrowserRouter path="/" exact>
-          <AllMeetupsPage/>
+          <SearchPage  data-hook="home-link" />
         </BrowserRouter>
 
-        <BrowserRouter path="/new-meetup">
-          <NewMeetupPage />
-        </BrowserRouter>
-
-        <BrowserRouter path="/favorites">
-          <FavoritesPage />
+        <BrowserRouter path="/collection" exact>
+          <CollectionPage data-hook="collections-link" />
         </BrowserRouter>
       </Switch>
     </div>

@@ -1,0 +1,49 @@
+.container {
+  border-radius: 5px;
+  margin: 40px auto;
+  min-height: 100vh;
+
+  .input_wrap {
+    position: relative;
+    display: flex;
+    width: 380px;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+
+    .search_input {
+      position: absolute;
+      padding-inline-start: 60px;
+      padding-inline-end: 0;
+      font-size: 14px;
+      background: none;
+      color: #5a6674;
+      height: 35px;
+      border: none;
+      -webkit-appearance: none;
+      appearance: none;
+      outline: none;
+      width: 80%;
+    }
+
+    .icon {
+      font-size: 20px;
+      left: 15px;
+      position: absolute;
+      cursor: pointer;
+      top: 10px;
+    }
+  }
+
+  .all_books {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
